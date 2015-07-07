@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hangman</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content=""width="device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+       <div class="wrapper">
+           <article class="header">
+               <h1>Hangman</h1>
+           </article>
+           <article id="word">
+               <h3>Your word is:</h3>
+               <p id="targetWord"></p>
+           </article>
+           <article id="guesses">
+               <h3>You have guessed:</h3>
+               <p id="previousGuesses">Nothing yet. Please guess a letter.</p>
+           </article>
+           <article id="guessInput">
+               <input type="text" maxlength="1" id="guess" placeholder="Type a letter"/>
+           </article>
+       </div>
+
+       <!-- Scripts -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+       <script src="js/app.js"></script>
+    </body>
+</html>
