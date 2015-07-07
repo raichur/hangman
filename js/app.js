@@ -1,7 +1,8 @@
 var targetWord = '',
     wordMeanings = [],
     maxLives = 6,
-    guesses = [];
+    guesses = [],
+    colors = ["#E91E63", "#E91E63", "#7C4DFF", "#3F51B5", "#4CAF50", "#FF5722", "#009688"];
 
 // Load random nouns using the Wordnik API
 function loadWord() {
@@ -44,6 +45,10 @@ function getGuesses() {
     if(/^[a-zA-Z]*$/.test($('#guess').val()) && typeof $('#guess').val() !== undefined) {
         guesses.push($('#guess').val().toLowerCase());
     }
+}
+
+function backgroundColor(){
+    $('body').css('background', colors[Math.floor(Math.random()*colors.length)]);
 }
 
 function drawGuesses() {
@@ -114,6 +119,7 @@ function updateGuesses() {
 }
 
 $(function() {
+    backgroundColor();
     drawWord();
     drawGuesses();
     $('#guess').keypress(function(event) {

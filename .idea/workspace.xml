@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="717135c6-573f-4640-b477-63066cadd897" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Aller/Aller Font License.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Aller/AllerDisplay.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Aller/Aller_Bd.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Aller/Aller_BdIt.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Aller/Aller_It.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Aller/Aller_Lt.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Aller/Aller_LtIt.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Aller/Aller_Rg.ttf" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
     </list>
     <ignored path="hangman.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,19 +35,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="25" selection-start="2564" selection-end="2564" vertical-scroll-proportion="0.0" vertical-offset="576" max-vertical-offset="1950">
+            <state line="121" column="22" selection-start="3581" selection-end="3581" vertical-scroll-proportion="0.6788991" vertical-offset="1371" max-vertical-offset="2040">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="14" selection-start="191" selection-end="191" vertical-scroll-proportion="0.2023988" vertical-offset="0" max-vertical-offset="735">
+            <state line="11" column="17" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
               <folding />
             </state>
           </provider>
@@ -79,8 +73,8 @@
       <list>
         <option value="$PROJECT_DIR$/words.json" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/js/app.js" />
       </list>
     </option>
   </component>
@@ -241,13 +235,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1366" y="0" width="1366" height="768" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24963397" sideWeight="0.6705036" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294964" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -288,16 +282,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
+    <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="25" selection-start="2564" selection-end="2564" vertical-scroll-proportion="0.0" vertical-offset="576" max-vertical-offset="1950">
+        <state line="11" column="17" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
+    <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="14" selection-start="191" selection-end="191" vertical-scroll-proportion="0.2023988" vertical-offset="0" max-vertical-offset="735">
+        <state line="121" column="22" selection-start="3581" selection-end="3581" vertical-scroll-proportion="0.6788991" vertical-offset="1371" max-vertical-offset="2040">
           <folding />
         </state>
       </provider>
