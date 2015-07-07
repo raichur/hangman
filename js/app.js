@@ -59,9 +59,9 @@ function hasWon() {
 
 function endGameDialog(isWinner) {
     if(isWinner) {
-        $('#endGameDialog').text('You won! You guessed ' + targetWord + ' in ' + guesses.length + ' guesses.');
+        $('#endGameDialog').text('You won! You guessed ' + targetWord.toUpperCase() + ' in ' + guesses.length + ' guesses.');
     } else {
-        $('#endGameDialog').html('You lose! The word was ' + targetWord + '<br/><a href="javascript:resetGame();">Reset</a>');
+        $('#endGameDialog').html('You lose! The word was ' + targetWord.toUpperCase() + '<br/><a href="javascript:resetGame();">Reset</a>');
     }
 }
 

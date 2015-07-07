@@ -7,21 +7,26 @@
         <link rel="stylesheet" href="css/style.css"/>
     </head>
     <body>
+        <article class="header">
+            <h1>Hangman</h1>
+        </article>
        <div class="wrapper">
-           <article class="header">
-               <h1>Hangman</h1>
+           <article id="word" class="two_col">
+               <div class="article_wrap">
+                   <h3>Your word is:</h3>
+                   <h2 id="targetWord"></h2>
+                   <p id="targetDef"></p>
+               </div>
            </article>
-           <div><span id="lives">6</span> lives</div>
-           <article id="word">
-               <h3>Your word is:</h3>
-               <p id="targetWord"></p>
-           </article>
-           <article id="guesses">
-               <h3>You have guessed:</h3>
-               <p id="previousGuesses"></p>
-           </article>
-           <article id="guessInput">
-               <input type="text" maxlength="1" id="guess" placeholder="Type a letter"/>
+           <article id="guesses" class="two_col">
+               <div class="article_wrap">
+                   <h3>You have guessed:</h3>
+                   <p id="previousGuesses"></p>
+                   <div id="guessInput">
+                       <input type="text" maxlength="1" id="guess" placeholder="Type a letter"/>
+                       <div><span id="lives">6</span> lives</div>
+                   </div>
+               </div>
            </article>
        </div>
 
