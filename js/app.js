@@ -59,7 +59,7 @@ function hasWon() {
 
 function endGameDialog(isWinner) {
     if(isWinner) {
-        $('#endGameDialog').text('Bazinga! You guessed ' + targetWord + ' in ' + guesses.length + ' guesses.');
+        $('#endGameDialog').text('You won! You guessed ' + targetWord + ' in ' + guesses.length + ' guesses.');
     } else {
         $('#endGameDialog').html('You lose! The word was ' + targetWord + '<br/><a href="javascript:resetGame();">Reset</a>');
     }
@@ -84,7 +84,7 @@ function livesLeft() {
         string = targetWord.toLowerCase();
     $('#lives').text(livesRemaining);
     for (var i = 0; i < guesses.length; i++) {
-        if (string.indexOf(guesses[1], 0) == -1) {
+        if (string.indexOf(guesses[i], 0) == -1) {
             livesRemaining--;
             $('#lives').text(livesRemaining);
         }
