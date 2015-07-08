@@ -99,7 +99,7 @@ function obfuscateWord() {
 function livesLeft() {
     var livesRemaining = maxLives,
         string = targetWord.toLowerCase();
-    $('#lives').text(livesRemaining);
+    $('#lives').text(livesRemaining + livesText);
     for (var i = 0; i < guesses.length; i++) {
         if (string.indexOf(guesses[i], 0) == -1) {
             livesRemaining--;
@@ -112,7 +112,7 @@ function livesLeft() {
         }
     }
     if (livesRemaining <= 0) {
-        $('#lives').text('0');
+        $('#lives').text('0' + livesText);
         endGameDialog(false);
         return;
     }
@@ -123,7 +123,10 @@ function resetGame() {
     targetWord = '';
     wordMeanings = [];
     guesses = [];
+    livesText = ' lives';
     drawWord();
+    drawGuesses();
+    livesLeft();
 }
 
 // Update stuff after player losses or wins
