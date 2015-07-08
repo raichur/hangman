@@ -2,6 +2,7 @@ var targetWord = '',
     wordMeanings = [],
     maxLives = 6,
     guesses = [],
+    livesText = ' lives',
     colors = ["#E91E63", "#E91E63", "#7C4DFF", "#3F51B5", "#4CAF50", "#FF5722", "#009688"];
 
 // Load random nouns using the Wordnik API
@@ -47,8 +48,17 @@ function getGuesses() {
     }
 }
 
+function getDefs() {
+    $('#targetDef').text('');
+    for(var i = 0; i < wordMeanings.length; i++) {
+        $('#targetDef').append("<p>" + wordMeanings[i] + "</p>")
+    }
+
+}
+
 function backgroundColor(){
     $('body').css('background', colors[Math.floor(Math.random()*colors.length)]);
+    $('#endGameDialog').css('background', colors[Math.floor(Math.random()*colors.length)]);
 }
 
 function drawGuesses() {
@@ -64,9 +74,11 @@ function hasWon() {
 
 function endGameDialog(isWinner) {
     if(isWinner) {
-        $('#endGameDialog').text('You won! You guessed ' + targetWord.toUpperCase() + ' in ' + guesses.length + ' guesses.');
+        $('#endGameDialog').html('<h3>You won! You guessed ' + targetWord.toUpperCase() + ' in ' + guesses.length + ' guesses.<br/><br/><a href="javascript:resetGame();">New Game</a></h3>');
+        $('#endGameDialog').fadeIn();
     } else {
-        $('#endGameDialog').html('You lose! The word was ' + targetWord.toUpperCase() + '<br/><a href="javascript:resetGame();">Reset</a>');
+        $('#endGameDialog').html('<h3>Oops! The word was ' + targetWord.toUpperCase() + '<br/><br/><a href="javascript:resetGame();">Reset</a></h3>');
+        $('#endGameDialog').fadeIn();
     }
 }
 
@@ -91,7 +103,12 @@ function livesLeft() {
     for (var i = 0; i < guesses.length; i++) {
         if (string.indexOf(guesses[i], 0) == -1) {
             livesRemaining--;
-            $('#lives').text(livesRemaining);
+            if(livesRemaining == 1){
+                livesText = " life";
+            } else {
+                livesText = " lives";
+            }
+            $('#lives').text(livesRemaining + livesText);
         }
     }
     if (livesRemaining <= 0) {
@@ -102,6 +119,7 @@ function livesLeft() {
 }
 
 function resetGame() {
+    $('#endGameDialog').fadeOut();
     targetWord = '';
     wordMeanings = [];
     guesses = [];
@@ -114,8 +132,13 @@ function updateGuesses() {
     cleanGuesses();
     drawWord();
     drawGuesses();
+    getDefs();
     livesLeft();
     hasWon();
+}
+
+window.load = function() {
+    setTimeout(function() { $('#guess').focus() }, 3000);
 }
 
 $(function() {
@@ -127,5 +150,8 @@ $(function() {
             updateGuesses();
             $('#guess').val('');
         }
+    });
+    $(document).ajaxComplete(function(){
+        getDefs();
     });
 });

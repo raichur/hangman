@@ -24,22 +24,58 @@ h1 {
     font-size: 4em;
     letter-spacing: .2em;
 }
-.two_col {
-    width: 50%;
+#targetDef {
+    margin-top: 30px;
 }
+
 .wrapper {
     width: 80%;
     margin: auto;
 }
-.article_wrap {
-    margin: 0;
-    width: 50%;
-    display: inline-block;
-}
+
 #guess, #targetWord, #previousGuesses {
     text-transform: uppercase;
 }
 article {
     text-align: center;
-    float: left;
+}
+#endGameDialog {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: none;
+    top: 0;
+    text-align: center;
+    z-index: 5;
+}
+#endGameDialog h3 {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#endGameDialog a {
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    border-radius: 8px;
+    background: rgba(0,0,0,.5);
+    &:hover {
+        background: rgba(0,0,0,.7);
+    }
+}
+
+input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    font-size: 3em;
+    text-align: center;
 }
